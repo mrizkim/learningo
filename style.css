@@ -1,0 +1,180 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+button {
+  cursor: pointer;
+}
+
+.container {
+  display: flex;
+  background-color: aqua;
+  width: 100vw;
+  height: 100vh;
+}
+
+.content-kiri {
+  display: flex;
+  flex: 60%;
+  background-image: url(assets/img/image1.svg);
+  background-size: cover;
+  justify-content: center;
+  align-items: center;
+}
+
+.box {
+  padding: 108px 88px;
+  width: 500px;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.header {
+  width: 200px;
+  margin-bottom: 40px;
+}
+
+.header h1 {
+  color: #fff;
+  opacity: 1;
+  font-size: 3rem;
+}
+
+.header span {
+  color: #000;
+}
+
+.box p {
+  width: 300px;
+  font-size: 18px;
+}
+
+.content-kanan {
+  flex: 40%;
+  padding-top: 72px;
+  padding-left: 87px;
+  background-color: #fff;
+}
+
+.content-kanan .content-form {
+  width: 80%;
+}
+
+.content-kanan .bx {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #3e334e;
+  margin-bottom: 40px;
+}
+
+.content-kanan .heading h1 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+.content-kanan .heading p {
+  text-align: start;
+}
+.content-kanan .heading {
+  margin-bottom: 48px;
+}
+
+form {
+  display: grid;
+  padding-top: 32px;
+}
+
+form label {
+  margin-bottom: 8px;
+}
+
+form input {
+  margin-bottom: 24px;
+  padding: 16px;
+  border-radius: 8px;
+  border: 1px solid #afa2c3;
+}
+
+form .remember {
+  display: flex;
+  justify-content: space-between;
+}
+
+form .form-btn {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 48px;
+}
+
+form .form-btn button {
+  width: 196px;
+  padding: 16px 0;
+  background-color: #fff;
+  border-radius: 8px;
+  border: 1px solid #3e334e;
+}
+form .form-btn button.active {
+  border: none;
+  background: linear-gradient(270deg, #fb6564 0%, #a03cea 100%);
+}
+
+.content-kanan p {
+  text-align: center;
+}
+
+.login-soc {
+  display: flex;
+  justify-content: space-between;
+}
+
+.login-soc button {
+  width: 150px;
+  margin-top: 16px;
+  padding: 13px 0;
+  background-color: #fff;
+  border: 1px solid #3e334e;
+  border-radius: 8px;
+}
+
+@media screen and (max-width: 991px) {
+  body .container {
+    background-image: url(assets/img/image1.svg);
+  }
+  .content-kiri {
+    display: none;
+  }
+
+  .content-kanan {
+    display: grid;
+    justify-content: center;
+    width: 100vw;
+    background-color: transparent;
+    padding: 52px 0;
+  }
+
+  .content-kanan .content-form {
+    width: 90vw;
+  }
+  .content-kanan .content-form .heading {
+    margin-bottom: 16px;
+  }
+  .content-kanan .content-form .heading h1 {
+    margin-top: 20px;
+  }
+
+  .content-kanan .content-form form .email,
+  .password,
+  .remember,
+  .form-btn,
+  .login-soc {
+    width: 90vw;
+  }
+}
